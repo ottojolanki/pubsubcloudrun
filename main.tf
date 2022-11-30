@@ -21,7 +21,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "gcr.io/cloudrun/hello" # Replace with newly created image gcr.io/<project_id>/pubsub
+        image = "gcr.io/rna-seq-pipeline-204900/pubsub" # Replace with newly created image gcr.io/<project_id>/pubsub
       }
     }
   }

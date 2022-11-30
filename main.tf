@@ -16,7 +16,7 @@ resource "google_project_service" "cloudrun_api" {
 
 # [START cloudrun_service_pubsub_service]
 resource "google_cloud_run_service" "default" {
-  name     = "pubsub-tutorial"
+  name     = "pubsub-cloudrun"
   location = "us-west2"
   template {
     spec {
